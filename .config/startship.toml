@@ -1,0 +1,97 @@
+add_newline = true
+
+format = """$all$line_break$character"""
+
+# 👤 Usuario (nuevo color)
+[username]
+style_user = "bold #0088ff"
+style_root = "bold #ff003c"
+format = "[󰣇 $user]($style) "
+show_always = true
+
+# 🌐 Host
+[hostname]
+style = "bold #ff0080"
+format = "[@$hostname]($style) "
+
+# 📁 Directorio
+[directory]
+style = "bold #39ff14"
+format = "[ $path]($style) "
+truncation_length = 3
+
+# 🌿 Git
+[git_branch]
+symbol = ""
+style = "bold #ff00ff"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bold #ff003c"
+format = "[ $all_status$ahead_behind ]($style)"
+
+# ⏱ Tiempo comando
+[cmd_duration]
+min_time = 500
+style = "bold #00faff"
+format = "[  $duration ]($style)"
+
+# ❌ Exit
+[status]
+style = "bold #ff003c"
+format = "[ ✖ $status ]($style)"
+disabled = false
+
+# 🚀 Lenguajes
+[nodejs]
+symbol = ""
+style = "bold #00faff"
+format = "[ $symbol ($version) ]($style)"
+
+[python]
+symbol = ""
+style = "bold #ff00ff"
+format = "[ $symbol ($version) ]($style)"
+
+[rust]
+symbol = ""
+style = "bold #ff5f00"
+format = "[ $symbol ($version) ]($style)"
+
+[golang]
+symbol = ""
+style = "bold #00faff"
+format = "[ $symbol ($version) ]($style)"
+
+[java]
+symbol = ""
+style = "bold #ff003c"
+format = "[ $symbol ($version) ]($style)"
+
+[php]
+symbol = ""
+style = "bold #a100ff"
+format = "[ $symbol ($version) ]($style)"
+
+[docker_context]
+symbol = ""
+style = "bold #00faff"
+format = "[ $symbol $context ]($style)"
+
+# 🧠 Memoria
+[memory_usage]
+disabled = false
+threshold = 75
+style = "bold #ff00ff"
+format = "[  ${ram_pct} ]($style)"
+
+# 📦 Package
+[package]
+style = "bold #00ff9c"
+format = "[ 📦 $version ]($style)"
+
+# ❯ Prompt
+[character]
+success_symbol = "[❯](bold #39ff14)"
+error_symbol = "[❯](bold #ff003c)"
+vicmd_symbol = "[❮](bold #0088ff)"

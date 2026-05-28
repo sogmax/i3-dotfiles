@@ -1,0 +1,58 @@
+---
+user: 226                       # Default = 230
+group: 226                      # Default = 187
+permission:
+  read: 226              # Default = dark_green
+  write: 160            # Default = dark_yellow
+  exec: 34              # Default = dark_red
+  exec-sticky: 5        # Default = 5
+  no-access: 201       # Default = 245
+  octal: 6             # Default = 6
+  acl: 20              # Default = dark_cyan
+  context: 20          # Default = cyan
+date:
+  hour-old: 33         # Default = 40
+  day-old: 33          # Default = 42
+  older: 33            # Default = 36
+size:
+  none: 201            # Default = 245
+  small: 34            # Default = 229
+  medium: 226          # Default = 216
+  large: 202           # Default = 172
+inode:
+  valid: 13            # Default = 13
+  invalid: 245         # Default = 245
+links:
+  valid: 13            # Default = 13
+  invalid: 245         # Default = 245
+tree-edge: 245         # Default = 245
+git-status:
+  default: 245         # Default = 245
+  unmodified: 245      # Default = 245
+  ignored: 245         # Default = 245
+  new-in-index: dark_green    # Default = dark_green
+  new-in-workdir: dark_green  # Default = dark_green
+  typechange: dark_yellow     # Default = dark_yellow
+  deleted: dark_red           # Default = dark_red
+  renamed: dark_green         # Default = dark_green
+  modified: dark_yellow       # Default = dark_yellow
+  conflicted: dark_red        # Default = dark_red
+#filetype:
+  #dir: 160                # Color para directorios
+#files: 226                # Color para archivos comunes
+#config-files:
+#  extensions:
+#    - ".conf"
+#    - ".yaml"
+#    - ".yml"
+#    - ".toml"
+#    - ".theme"
+#    - ".ini"
+#  color: 231                # Color para archivos de configuración
+#image-files:
+#  extensions:
+#    - ".jpg"
+#    - ".jpeg"
+#    - ".png"
+#    - ".gif"
+#  color: 165                # Color para archivos de imagen

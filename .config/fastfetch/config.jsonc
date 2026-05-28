@@ -1,0 +1,189 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+    "logo": {
+        "padding": {
+            "top": 2,
+            "left": 2
+        }
+    },
+    "display": {
+        "separator": ": "
+    },
+    "modules": [
+        // ===== Hardware =====
+        {
+            "type": "custom",
+            "format": "┌─ Hardware ────────────────────────────────────────────────────┐",
+            "outputColor": "#B427F5"
+        },
+        {
+            "type": "host",
+            "key": "󰌢 PC",
+            "keyColor": "#27F52E"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├󰻠 CPU",
+            "keyColor": "#27F52E"
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰍛 GPU",
+            "keyColor": "#27F52E"
+        },
+        {
+            "type": "disk",
+            "key": "│ ├ Disk",
+            "keyColor": "#27F52E"
+        },
+        {
+            "type": "memory",
+            "key": "│ └󰑭 RAM",
+            "keyColor": "#27F52E"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────────────────────────┘",
+            "outputColor": "#B427F5"
+        },
+
+        // ===== Software =====
+        {
+            "type": "custom",
+            "format": "┌─ Software ────────────────────────────────────────────────────┐",
+            "outputColor": "#B427F5"
+        },
+        {
+            "type": "os",
+            "key": "{icon} OS",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├ Kernel",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "bootmgr",
+            "key": "│ ├󰒓 Boot",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖 Pkgs",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "shell",
+            "key": "│ ├ Shell",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "lm",
+            "key": "│ ├󱂬 LM",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "wm",
+            "key": "│ ├󱂬 WM",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├ Term",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "player",
+            "key": "│ ├󰥠 Player",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "media",
+            "key": "│ ├󰝚 Media",
+            "keyColor": "cyan"
+        },
+        {
+            "type": "user",
+            "key": "│ └󰀄 User",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────────────────────────┘",
+            "outputColor": "#B427F5"
+        },
+
+        // ===== Network =====
+        {
+            "type": "custom",
+            "format": "┌─ Network ─────────────────────────────────────────────────────┐",
+            "outputColor": "#B427F5"
+        },
+        {
+            "type": "wifi",
+            "key": "{icon} WiFi",
+            "keyColor": "#0068FF"
+        },
+        {
+            "type": "localip",
+            "key": "│ ├󰩟 Local IP",
+            "keyColor": "#0068FF",
+            "showAllIps": true
+        },
+        {
+            "type": "publicip",
+            "timeout": 1000,
+            "key": "│ ├󰖟 Public IP",
+            "keyColor": "#0068FF"
+        },
+        {
+            "type": "netio",
+            "key": "│ └󰤨 Traffic",
+            "keyColor": "#0068FF"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────────────────────────┘",
+            "outputColor": "#B427F5"
+        },
+
+        // ===== Uptime / OS Age =====
+        {
+            "type": "custom",
+            "format": "┌─ Uptime / Os Age ─────────────────────────────────────────────┐",
+            "outputColor": "#B427F5"
+        },
+        {
+            "type": "uptime",
+            "key": "{icon} Uptime",
+            "keyColor": "#690AFF"
+        },
+        {
+            "type": "disk",
+            "key": "󰔟 OS Age",
+            "keyColor": "#690AFF",
+            "folders": "/",
+            "format": "{create-time:10} ({days} days)"
+        },
+        {
+            "type": "custom",
+            "format": "└───────────────────────────────────────────────────────────────┘",
+            "outputColor": "#B427F5"
+        },
+
+        // ===== Weather (oculto) =====
+        {
+            "type": "weather",
+            "timeout": 1000,
+            "temp": true,
+            "show": false
+        },
+        {
+            "type": "custom",
+            "format": "",
+            "exec": "true"
+        }
+    ]
+}
